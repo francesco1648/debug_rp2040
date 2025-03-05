@@ -113,10 +113,10 @@ English version below
 1. **Impostazioni Globali**  
    - In basso a sinistra in VS Code, vai su **Settings**.
    - Clicca sull'icona della pagina per aprire il file `settings.json`.
-   - Aggiungi (modifica) le seguenti configurazioni:
+   - Aggiungi (ciò che si trova () risulta essere un esempio) le seguenti configurazioni:
      ```json
      {
-       "cortex-debug.openocdPath": "...PATH TO OPENOCD.EXE... (es. open_ocd/bin/openocd.exe)",
+       "cortex-debug.openocdPath": "...PATH TO OPENOCD.EXE... (es. open_ocd/bin/openocd.exe)",  // Modifica con il percorso corretto
        "cortex-debug.gdbPath": "arm-none-eabi-gdb"
      }
      ```
@@ -138,8 +138,8 @@ English version below
                  "device": "RP2040",
                  "runToMain": true,
                  "configFiles": ["interface/cmsis-dap.cfg", "target/rp2040.cfg"],
-                 "searchDir": ["...PATH TO SCRIPTS... (es. open_ocd/openocd/scripts)"],
-                 "svdFile": "C:/Program Files/Raspberry_Pi/pico-sdk/src/rp2040/hardware_regs/rp2040.svd",
+                 "searchDir": ["...PATH TO SCRIPTS... (es. open_ocd/openocd/scripts)"],                      // Modifica con il percorso corretto
+                 "svdFile": "C:/Program Files/Raspberry_Pi/pico-sdk/src/rp2040/hardware_regs/rp2040.svd",    // Modifica con il percorso corretto
                  "setupCommands": [
                      { "text": "adapter speed 2000" },
                      { "text": "transport select swd" },
