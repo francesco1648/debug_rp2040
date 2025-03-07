@@ -61,7 +61,7 @@ English version below
    - Apri Zadig e seleziona **Options > List All Devices**.
    - Associa:
      - **cmsis-dap v2** → `libusb-win32`
-     - **cdc-acm uart interface** → `libwdi`
+     - **cdc-acm uart interface** → `USB Serial (CDC)`
    - In **Gestione dispositivi**:  
      Vai su *Porte (COM & LPT) > cdc-acm uart interface > Proprietà > Impostazioni della porta* e imposta il **bit per secondo** a `1280000`.
 
@@ -92,7 +92,8 @@ English version below
    - **Nota:** Non chiudere questo terminale.
 
 3. **Terminale 2 (cmm2):**  
-   - Posizionarsi nella directory contenente lo script da testare (ad esempio, un semplice blink).
+   - In questa sezione proviamo se tutto funziona correttamente.
+   - Posizionarsi nella directory contenente lo script di esempio (ad esempio, un semplice blink).
    - Avvia `gdb` con il comando:
      ```bash
      arm-none-eabi-gdb blink.ino.elf
@@ -112,13 +113,13 @@ English version below
 
 1. **Impostazioni Globali**  
    - In basso a sinistra in VS Code, vai su **Settings**.
-   - Clicca sull'icona della pagina per aprire il file `settings.json`.
+   - Clicca in alto a destra sull'icona della pagina per aprire il file `settings.json`.
    - Aggiungi (ciò che si trova () risulta essere un esempio) le seguenti configurazioni:
      ```json
-     {
+     
        "cortex-debug.openocdPath": "...PATH TO OPENOCD.EXE... (es. open_ocd/bin/openocd.exe)",  // Modifica con il percorso corretto
-       "cortex-debug.gdbPath": "arm-none-eabi-gdb"
-     }
+       "cortex-debug.gdbPath": "arm-none-eabi-gdb",
+     
      ```
 
 2. **Configurazione del Progetto**  
