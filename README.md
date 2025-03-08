@@ -173,7 +173,7 @@ Seguendo attentamente tutti i passaggi sopra descritti, dovresti essere in grado
 Buon debug!
 
 
-//-------------------------------------------------------------------------------------------------
+---
 
 # Guide: Connecting a Raspberry Pi Pico as PicoProbe Debug to Another Raspberry Pi Pico  
 *Tutorial for Windows*
